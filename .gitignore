@@ -1,6 +1,6 @@
-/database/raw/followers/*.txt
-/database/raw/following/*.txt
-/database/*.json
+database/raw/followers/*.txt
+database/raw/following/*.txt
+database/*.json
 
 logindata.py
 
