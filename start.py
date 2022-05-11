@@ -25,7 +25,8 @@ print('[1] - update followers of a target user')
 print('[2] - update following of a target user // not working yet')
 print('[3] - update database of users')
 print('[4] - instagram credentials')
-print('[5] - exit')
+print('[5] - install dependencies')
+print('[6] - exit')
 
 
 while True:
@@ -54,6 +55,20 @@ while True:
         print('edit your credentials in logindata.py')
         print('----------------------------------')
     elif choice == '5':
+        #make folder
+        if not os.path.exists(os.path.join(os.path.dirname(
+                __file__), '..') + '\\database\\'):
+            os.mkdir(os.path.join(os.path.dirname(
+                __file__), '..') + '\\database\\')
+        if not os.path.exists(os.path.join(os.path.dirname(
+            __file__), '..') + '\\database\\raw\\'):
+            os.mkdir(os.path.join(os.path.dirname(
+                __file__), '..') + '\\database\\raw\\')
+        if not os.path.exists(os.path.join(os.path.dirname(
+            __file__), '..') + '\\database\\raw\\followers\\'):
+            os.mkdir(os.path.join(os.path.dirname(
+                __file__), '..') + '\\database\\raw\\followers\\')
+    elif choice == '6':
         sys.exit()
     else:
         print('\n')
