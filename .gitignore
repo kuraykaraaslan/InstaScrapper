@@ -1,0 +1,10 @@
+/database/raw/followers/*.txt
+/database/raw/following/*.txt
+/database/*.json
+
+logindata.py
+
+__pycache__/
+
+*.py[cod]
+*$py.class
